@@ -1,0 +1,69 @@
+body
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* タイトル部 */
+.title_section {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.0rem;
+}
+
+/* じゃんけん選択肢エリア */
+.jyanken_item_list{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.select_target_item{
+  width: 33%;
+  text-align: center;
+  font-size: 2.0rem;
+  border: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.select_target_item:hover{
+  background-color:azure;
+}
+
+/* 判定結果表示エリア */
+.Judgement_Tile_section{
+  display: flex;
+  justify-content: center;
+}
+.Judgement_Tile_section p {
+  font-size: 2.0rem;
+}
+
+.Judgement_section{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.judgement_result_area {
+  font-size: 3.0rem;
+  color: blue;
+}
+
+.returnLink {
+  display: flex;
+  justify-content: center;
+  font-size: 2.0rem;
+}

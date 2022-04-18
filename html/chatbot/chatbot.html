@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/chatbot/chatbotStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ゲーム選択チャットボット</h1>
+    <!--テキスト表示画面-->
+    <div id="text_field">
+      <!--書き込み済チャットテキスト-->
+      <ul id="chat-list"></ul>
+    </div>
+    <!--入力場所，送信ボタン-->
+    <div id="input-field">
+      <input type="text" id="chat-input" />
+      <input type="button" value="Send" id="chat-button" />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      let gameId = 0;
+      $("#chat-button").on("click", function () {
+        gameId = sendChatText();
+        // ゲームページへ遷移
+        if (gameId == 1) {
+          window.location.href = "../game/normal/normal.html";
+        } else if (gameId == 2) {
+          window.location.href = "../game/shooting/shooting.html";
+        }
+      });
+    </script>
+    <script src="../../js/chatbot/chatbot.js"></script>
+  </body>
+</html>
