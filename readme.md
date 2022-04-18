@@ -1,6 +1,6 @@
 # プロダクトのタイトル
 
-https://shu-matsumoto.github.io/Jyanken/index.html
+https://shu-matsumoto.github.io/Jyanken/html/index.html
 
 ## プロダクトの紹介
 
